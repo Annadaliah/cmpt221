@@ -53,20 +53,18 @@ with app.app_context():
 
     # # write a query to insert 3 records into the Courses table
     query_1 = """ 
-            INSERT INTO Course 
-            (CourseName)
-            VALUES (text, text)   
+            INSERT INTO public."Courses" ("CourseName", "Semester", "Year")
+            VALUES 
+                ('ArtHistory', 'Fall', 2024),
+                ('Animation', 'Spring', 2025),
+                ('Drawing', 'Fall', 2024);
             """
-    values = [("Art History"),
-            ("Animation"),
-            ("Drawing")]
     db.session.execute(text(query_1))
     db.session.commit()
 
     # # write a query to select all records from the Courses table
     query_2 = """
-                SELECT *
-                FROM Course
+                SELECT * FROM "Courses"
                 """
     courses = db.session.execute(text(query_2))
     print(f"\n\n----------- Courses Table")
@@ -75,15 +73,15 @@ with app.app_context():
 
     # # write a query to update 1 record in the Courses table
     query_3 = """ 
-            UPDATE Course 
-            SET Course = "Animation 1"
+            UPDATE "Courses"
+            SET "CourseName" = 'DigitalMedia' WHERE "CourseName" = 'Animation'
            """
     db.session.execute(text(query_3))
     db.session.commit()
 
     # # write a query to delete 1 record in the Courses table
     query_4 = """
-           DELETE FROM Courses WHERE Course = "Art History"
+           DELETE FROM "Courses" WHERE "CourseName" = 'ArtHistory'
            """
     db.session.execute(text(query_4))
     db.session.commit()
