@@ -1,11 +1,56 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Lab 5</title>
-        <link rel="stylesheet" href="/static/style.css">
-    </head>
-    <body>
-        <h1>Welcome to Lab 5!</h1>
-        <p>Change me and use me as your first webpage!</p>
-    </body>
+
+<head>
+    <title>Bad GUI</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+    <h1>Bad GUI</h1>
+    <p>What not to be done!</p>
+    <div class="box1">
+        <input class="myButton" type="submit" value="Press me!">
+        <div class="column">
+            <div class="imgbox">
+                <button class="myBtn1">
+                    Click here!
+                </button>
+            </div>
+            <div class="imgbox2">
+                <button class="myBtn2">
+                    Press here!
+                </button>
+            </div>
+            <div class="buttonHolder">
+                <div class="button1">
+                    <button>Press!</button>
+                </div>
+                <div class="button2">
+                    <button>Press me!</button>
+                </div>
+                <div class="button3">
+                    <button>Press this!</button>
+                </div>
+                <div class="button4">
+                    <button>Please press!</button>
+                </div>
+                <div class="button5">
+                    <button>Don't press!</button>
+                </div>
+                <div class="button6">
+                    <button>Should you press?</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<footer>
+    <div class="button">
+        <a href="{{ url_for('static', filename='templates/homepage.html') }}">
+            <button id="Press me too!" type="button" onclick="window.location.href='/homepage.html'" ;
+                class="button">Enter</button>
+    </div>
+</footer>
+
 </html>
