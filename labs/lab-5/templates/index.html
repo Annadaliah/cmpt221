@@ -8,7 +8,7 @@
 
 <body>
     <h1>Bad GUI</h1>
-    <p>What not to be done!</p>
+    <p>Buttons! Oh buttons! What to be done!</p>
     <div class="box1">
         <input class="myButton" type="submit" value="Press me!">
         <div class="column">
@@ -27,7 +27,11 @@
                     <button>Press!</button>
                 </div>
                 <div class="button2">
-                    <button>Press me!</button>
+                    <a href="{{url_for('stuff') }}">
+                        <button id="Press me too!" type="button"
+                            onclick="window.location.href='/templates/homepage.html'" ; class="button">Press
+                            me!</button>
+                    </a>
                 </div>
                 <div class="button3">
                     <button>Press this!</button>
@@ -47,9 +51,10 @@
 </body>
 <footer>
     <div class="button">
-        <a href="{{ url_for('static', filename='templates/homepage.html') }}">
-            <button id="Press me too!" type="button" onclick="window.location.href='/homepage.html'" ;
+        <a href="{{url_for('stuff') }}">
+            <button id="Press me too!" type="button" onclick="window.location.href='/templates/homepage.html'" ;
                 class="button">Enter</button>
+        </a>
     </div>
 </footer>
 
