@@ -35,13 +35,13 @@
 
 ### Lab 
 Create a login form that requires a user's email and password.
+* if the password matches, the user needs to be routed somewhere (Anywhere but the login page)
+* if the password doesn't match, route the user to the login page (We will cover validation in the next lab)
 
 Keep in mind that:
 * webpages are defined in app.py (use index.html as an example)
 * you need to pull the user's email and password from the database
 * you need to compare the user's email and password from the databse to the input values
-* if the password is incorrect, fail gracefully
-* after hitting submit, the user needs to be routed somewhere (I dont care where)
 
 To view the HTML, run the `app.py` script.
 
@@ -61,6 +61,8 @@ _**Note:** Don't forget to refresh your web broswer to apply HTML/CSS changes._
 
 **Helpful References:**
 * Flask forms: https://testdriven.io/courses/learn-flask/forms/
+* SQLAlchemy insert, update, & delete functions: https://docs.sqlalchemy.org/en/20/core/dml.html
+* SQLAlchemy select functions: https://docs.sqlalchemy.org/en/20/orm/queryguide/select.html
 * Week 3 & 8 slide decks
 * Class sign in example
 
@@ -70,8 +72,8 @@ Once you have completed this lab, push your work to Github, then open a pull req
 
 ```bash
 git add .
-git commit -m "completed lab 5"
-git push --set-upstream origin lab-5
+git commit -m "completed lab 6"
+git push --set-upstream origin lab-6
 # or
 git push
 ```
