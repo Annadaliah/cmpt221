@@ -1,0 +1,155 @@
+html,
+body {
+  background-color: rgb(223, 224, 217);
+}
+
+.column {
+  display: table-column;
+}
+
+.imgbox{
+  position: relative;
+  width: 500px;
+}
+
+.imgbox2{
+  position: flex;
+  width: 500px;
+}
+
+.myBtn1 {
+  position: relative;
+  bottom: 20px;
+  right: 20px;
+  width: 110px;
+  border-radius: 20px;
+  font-size: 15px;
+  border: none;
+  box-shadow:rgba (242,242,242) 0px 3px 20px;
+  transition: 0.3s linear;
+  font-weight: 700;
+}
+
+.myBtn1:hover {
+  transform: translateY(5px);
+}
+
+.myBtn2 {
+  position: relative;
+  bottom: 20px;
+  right: 20px;
+  width: 110px;
+  border-radius: 20px;
+  font-size: 15px;
+  border: none;
+  box-shadow:rgba (242,242,242) 0px 3px 20px;
+  transition: 0.3s linear;
+  font-weight: 700;
+}
+
+.myBtn2:hover {
+  transform: translateY(5px);
+}
+
+.buttonHolder {
+  column-width: auto;
+  grid-column: auto;
+  position: relative;
+  padding: 100vh;
+}
+
+.button1 {
+  position: fixed;
+  float: left;
+  border-radius: 20px;
+  font-size: 15px;
+  border: none;
+  box-shadow:rgba (242,242,242) 0px 3px 20px;
+  transition: 0.3s linear;
+  font-weight: 700;
+}
+
+.button2 {
+  position: relative;
+  float: right;
+  border-radius: 20px;
+  font-size: 15px;
+  border: none;
+  box-shadow:rgba (242,242,242) 0px 3px 20px;
+  transition: 0.3s linear;
+  font-weight: 700;
+}
+
+.button3 {
+  position: relative;
+  border-radius: 20px;
+  font-size: 15px;
+  border: none;
+  box-shadow:rgba (242,242,242) 0px 3px 20px;
+  transition: 0.3s linear;
+  font-weight: 700;
+}
+
+.button4 {
+  position: fixed;
+  border-radius: 20px;
+  font-size: 15px;
+  border: none;
+  box-shadow:rgba (242,242,242) 0px 3px 20px;
+  transition: 0.3s linear;
+  font-weight: 700;
+}
+
+
+img {
+  width: 5--px;
+  margin: 0;
+  padding: 0;
+  border-radius: 30px;
+  box-shadow: rgba (242,242,242) 0px 3px 20px;
+}
+
+.box1{
+  display: flex;
+  size: auto;
+}
+
+h1 {
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+p {
+  font-family: verdana;
+  font-size: 20px;
+  text-align: center;
+  color: white;
+}
+
+footer {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgba(137, 43, 226, 0);
+}
+
+.myButton {
+  background-image: url(/lab-5/static/images/YellowLogo.png) no-repeat;
+  cursor: pointer;
+  border: none;
+  width: 100px;
+  height: 100px;
+  font-family: verdana;
+}
+
+.myButton:active {
+  background-image: url(/lab-5/static/images/YellowLogo.png) no-repeat;
+  background-color: white;
+}
+
+.button {
+  border-radius: 20px;
+  font-size: 15px;
+  border: none;
+  box-shadow:rgba (242,242,242) 0px 3px 20px;
+  transition: 0.3s linear;
+  font-weight: 700;
+}
