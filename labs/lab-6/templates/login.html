@@ -1,19 +1,30 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Lab 6 Log In</title>
-        <link rel="stylesheet" href="/static/style.css">
-    </head>
-    <body>
-        <h1>Log In</h1>
-        <div>
-        <!-- Create a log in form here -->
 
-        </div>
-        
-        <br>
-        <a href="/">
-            <button type="button" id="home">Home</button>
-        </a>
-    </body>
+<head>
+    <title>Lab 6 Log In</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <h1>Log In</h1>
+    <div>
+        <form method="post">
+            <!-- Create a log in form here -->
+            <label for="Email">Email:</label>
+            <input type="email" id="Email" name="Email" value="" required>
+            <br>
+            <label for="Password">Password:</label>
+            <input type="Password" id="Password" name="Password" value="" required>
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <br>
+    <a href="/">
+        <button type="button" id="home">Home</button>
+    </a>
+</body>
+
 </html>
