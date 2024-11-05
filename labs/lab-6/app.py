@@ -35,12 +35,12 @@ def signup():
 def login():
     if request.method == 'GET':
         query = select(User).Email =="Email", (User).Password == "Password"
-        if (User).Email == "Email"
+        if (User).Email == "Email":
 
-        with app.app_context():
-            db.session.execute(query)
-            db.session.commit()
-        return redirect(url_for('index'))
+            with app.app_context():
+                db.session.execute(query)
+                db.session.commit()
+            return redirect(url_for('index'))
     return render_template('login.html')
 
 @app.route('/users')
