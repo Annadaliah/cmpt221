@@ -43,3 +43,12 @@ def sample_signup_input():
             'PhoneNumber': '1234567891', 
             'Password': 'mypassword'
             }
+
+@pytest.fixture
+def sample_login_input():
+   return {"Enter your first name" : 'FirstName',
+                "Enter your last name": 'LastName',
+                "Enter your email": 'Email',
+                "Enter your phone number" : 'PhoneNumber',
+                "Enter your password": 'Password'
+                }
